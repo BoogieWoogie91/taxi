@@ -54,6 +54,7 @@ header {
   width: 100%;
   background: #fff;
   z-index: 3;
+  padding: 10px 0;
 }
 
 header .menuHolder {
