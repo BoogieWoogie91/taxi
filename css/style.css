@@ -57,6 +57,11 @@ header {
   padding: 10px 0;
 }
 
+header .logoImg {
+  width: 120px;
+  height: 130px;
+}
+
 header .menuHolder {
   display: flex;
   justify-content: space-between;
@@ -72,13 +77,14 @@ header .menuHolder .whatsAppHolder img {
   object-fit: contain;
   width: 26px;
   height: 26px;
+  margin-right: 23px;
 }
 
 header .menuHolder .whatsAppHolder a {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  margin: 3px 0 13px 23px;
+  margin: 3px 0 13px 0;
   display: flex;
   text-decoration: none;
   color: #0c0c0f;
