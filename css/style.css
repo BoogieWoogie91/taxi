@@ -90,6 +90,7 @@ header .menuHolder .whatsAppHolder p {
   text-align: right;
   margin: 0;
   color: #3a3a28;
+  display: none;
 }
 
 .languageSwitch {
@@ -97,6 +98,7 @@ header .menuHolder .whatsAppHolder p {
   padding: 3px 2px;
   margin-left: 41px;
   display: flex;
+  display: none;
 }
 
 .languageSwitch button {
@@ -199,6 +201,7 @@ header .menuHolder .whatsAppHolder p {
   align-items: flex-start;
   background: url('../img/taxiBG.png') no-repeat;
   background-position: right center;
+  background-size: auto 160%;
 }
 
 .slide_1 h1 {
@@ -251,6 +254,8 @@ header .menuHolder .whatsAppHolder p {
   justify-content: space-between;
   align-items: center;
   margin: 0 15px;
+  max-width: 144px;
+  width: 100%;
 }
 
 .advantageList div:first-of-type {
@@ -499,7 +504,7 @@ header .menuHolder .whatsAppHolder p {
   }
 }
 
-@media(min-width: 200px) and (max-width: 350px) {
+@media(min-width: 200px) and (max-width: 750px) {
   .options .option .specs {
     height: 320px;
   }
