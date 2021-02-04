@@ -1,0 +1,682 @@
+/* @font-face {
+  font-family: "TahReg";
+  src: url(../fonts/Tahoma_Reg.ttf) format("opentype");
+} */
+
+div {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+.content_1110 {
+  max-width: 1140px;
+  min-width: 290px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.langRender {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+.langRender.kz {
+  display: none !important;
+}
+
+.langRender.hide {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+}
+
+/*****************************************************************************************************************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 3;
+}
+
+header .menuHolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menuHolder .whatsAppHolder {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .menuHolder .whatsAppHolder img {
+  object-fit: contain;
+  width: 26px;
+  height: 26px;
+}
+
+header .menuHolder .whatsAppHolder a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 3px 0 13px 23px;
+  display: flex;
+  text-decoration: none;
+  color: #0c0c0f;
+}
+
+header .menuHolder .whatsAppHolder p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+  margin: 0;
+  color: #3a3a28;
+}
+
+.languageSwitch {
+  position: relative;
+  padding: 3px 2px;
+  margin-left: 41px;
+  display: flex;
+}
+
+.languageSwitch button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 2;
+  transition: 300ms ease-in-out;
+}
+
+.languageSwitch button.white {
+  color: #fff;
+}
+
+.languageSwitchBG {
+  width: 35px;
+  height: 25px;
+  border-radius: 15px;
+  position: absolute;
+  background: #000;
+  transform: translateX(-6%);
+  top: 0;
+  z-index: 1;
+  transition: 300ms ease-in-out;
+}
+
+.languageSwitchBG.right {
+  transform: translateX(79%);
+}
+
+@media(min-width: 200px) and (max-width: 550px) {
+  .logoImg {
+    width: 77px;
+    height: 66px;
+  }
+
+  header .menuHolder .whatsAppHolder a {
+    font-size: 14px;
+    margin: 3px 0 8px 11px;
+  }
+
+  header .menuHolder .whatsAppHolder p {
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 200px) and (max-width: 370px) {
+  .logoImg {
+    width: 51.9px;
+    height: 44.5px;
+  }
+
+  header .menuHolder .whatsAppHolder {
+    width: 64%;
+  }
+
+  header .menuHolder .whatsAppHolder a {
+    font-size: 12px;
+    margin: 3px 0 8px 6px;
+  }
+
+  header .menuHolder .whatsAppHolder img {
+    width: 20px;
+    height: 20px;
+  }
+
+  header .menuHolder .whatsAppHolder p {
+    font-size: 10px;
+  }
+
+  .languageSwitch {
+    margin-left: 12px;
+  }
+
+  .languageSwitch button {
+    font-size: 12px;
+  }
+
+  .languageSwitchBG {
+    width: 31px;
+    height: 22px;
+  }
+
+  .languageSwitchBG.right {
+    transform: translateX(82%);
+}
+}
+
+/********************************************************************************************************************************/
+
+.slide_1 {
+  padding-bottom: 70px;
+}
+
+.slide_1 .content_1110 {
+  flex-flow: column;
+  align-items: flex-start;
+  background: url('../img/taxiBG.png') no-repeat;
+  background-position: right center;
+}
+
+.slide_1 h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 43px;
+  margin-bottom: 14px;
+}
+
+.slide_1 p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.slide_1 a {
+  width: 260px;
+  height: 66px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: 37px 0 66px 0;
+  transition: 300ms ease-in-out;
+  border: 1px solid #000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.slide_1 a:hover {
+  background: #fff;
+  color: #000;
+  transition: 300ms ease-in-out;
+}
+
+.advantageList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 525px;
+}
+
+.advantageList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.advantageList div:first-of-type {
+  margin: 0 15px 0 0;
+}
+
+.advantageList div:last-of-type {
+  margin: 0 0 0 15px;
+}
+
+.advantageList div p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 0 10px;
+}
+
+@media(min-width: 200px) and (max-width: 950px) {
+  .slide_1 .content_1110 {
+    background: none;
+    align-items: center;
+  }
+}
+
+@media(min-width: 200px) and (max-width: 400px) {
+  .advantageList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide_1 h1 {
+    text-align: center;
+  }
+
+  .advantageList div {
+    margin: 7px 0 !important;
+  }
+}
+
+/**************************************************************************************************************************/
+
+.slide_2 {
+  padding: 40px 0 0 0;
+  background: url('../img/tireTrailLeft.png'), url('../img/tireTrailRight.png');
+  background-position: 0 200px, 100% 430px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 30%, 30%;
+  position: relative;
+}
+
+.slide_2 .content_1110 {
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide_2 h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.slide_2 .prosRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 790px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.slide_2 .prosRow .proCard {
+  max-width: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 212px;
+}
+
+.slide_2 .prosRow .proCard.fn {
+  justify-content: flex-end;
+}
+
+.slide_2 .prosRow .proCard h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.slide_2 .prosRow .proCard p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  color: #3a3a28;
+  text-align: center;
+}
+
+.slide_2 .prosRow .proCard a {
+  width: 185px;
+  height: 55px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.slide_2 .prosRow .proCard a.green {
+  background: #51c71e;
+  color: #fff;
+}
+
+.slide_2 .prosRow .proCard a.green img {
+  width: 30px;
+  height: 30px;
+}
+
+.slide_2 .prosRow .proCard a.yellow {
+  background: #ffde00;
+  color: #000;
+  border: 1px solid #ffde00;
+}
+
+.slide_2 .prosRow .proCard a.green:hover img {
+  transform: rotate(360deg) scale(1.2);
+  transition: 1000ms ease-in-out;
+}
+
+.slide_2 .prosRow .proCard a.yellow:hover {
+  font-size: 25px;
+  transition: 300ms ease-in-out;
+}
+
+.slide_2 .prosRow .proCard a img {
+  margin-left: 25px;
+}
+
+@media(min-width: 200px) and (max-width: 700px) {
+  .slide_2 .prosRow {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide_2 .prosRow:first-of-type {
+    margin-bottom: 0px;
+  }
+
+  .slide_2 .prosRow .proCard {
+    margin-bottom: 20px;
+  }
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 920px;
+  width: 100%;
+}
+
+.options .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 334px;
+}
+
+.options .option h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 25px 0;
+}
+
+.options .option .specs {
+  background: #ffde00;
+  border-radius: 15px;
+  padding: 20px 35px;
+  width: 100%;
+  height: 270px;
+}
+
+.options .option h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  color: #3a3a28;
+  text-align: center;
+}
+
+.options .option p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+  color: #3a3a28;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.options .option p span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.options .option p.db {
+  display: block;
+}
+
+.options .option p.db.mb_37 {
+  margin-bottom: 37px;
+  margin-top: 25px;
+}
+
+.options .option h4.tAlL {
+  text-align: left;
+}
+
+.options .option p.tAlL {
+  text-align: left;
+}
+
+@media(min-width: 200px) and (max-width: 750px) {
+  .options {
+    flex-direction: column;
+  }
+
+  .options .option {
+    margin-bottom: 30px;
+    max-width: 290px;
+    box-sizing: border-box;
+  }
+}
+
+@media(min-width: 200px) and (max-width: 350px) {
+  .options .option .specs {
+    height: 320px;
+  }
+}
+
+.formHolder {
+  position: relative;
+  margin-top: 30px;
+}
+
+.formHolder form {
+  max-width: 470px;
+  width: 100%;
+  padding: 40px 90px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
+.formHolder form h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 0 18px 0;
+}
+
+.formHolder form p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 30px 0;
+  color: #3a3a28;
+  text-align: center;
+}
+
+.formHolder form input {
+  width: 178px;
+  height: 42px;
+  margin: 0 auto 15px auto;
+  border-radius: 15px;
+  border: none;
+  background: #f6f6f6;
+  text-indent: 15px;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  position: relative;
+  z-index: 1;
+  transition: 300ms ease-in-out;
+}
+
+.formHolder form input.error {
+  border: 1px solid red;
+}
+
+.formHolder form input::placeholder {
+  color: #b2b2b2;
+}
+
+.formHolder form input.submit {
+  background: #fadf5a;
+  border: #fadf5a 1px solid;
+  color: #000;
+  text-indent: 0;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.formHolder form input.submit:hover {
+  transition: 300ms ease-in-out;
+  font-size: 16px;
+}
+
+.formHolder form .checkboxHolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 220px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.formHolder form .checkboxHolder label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.formHolder form .checkboxHolder label.error {
+  color: red;
+  transition: 300ms ease-in-out;
+}
+
+.formHolder form input.check {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin: 0;
+}
+
+.yellowLine {
+  height: 40px;
+  width: 100%;
+  background: #ffe00d;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media(min-width: 200px) and (max-width: 600px) {
+  .formHolder form {
+    padding: 40px 15px;
+    width: 100%;
+  }
+}
+
+/**********************************************************************************************************************/
+
+footer {
+  background: #ffe00d;
+  padding: 40px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+footer p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3a3a28;
+}
+
+footer a {
+  width: 178px;
+  height: 43px;
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+  margin-top: 40px;
+}
+
+footer a:hover {
+  background: transparent;
+  color: #000;
+  transition: 300ms ease-in-out;
+}
+
+
+@media(min-width: 200px) and (max-width: 400px) {
+  footer p {
+    text-align: center;
+  }
+
+  footer {
+    padding: 40px 15px 50px 15px;
+  }
+}
