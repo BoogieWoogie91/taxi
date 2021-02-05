@@ -692,3 +692,33 @@ footer a:hover {
     padding: 40px 15px 50px 15px;
   }
 }
+
+#sendForm.sendFormSuccess input, #sendForm.sendFormSuccess label, #sendForm.sendFormSuccess p, #sendForm.sendFormSuccess h3 {
+  opacity: 0 !important;
+}
+
+#sendForm {
+  overflow: hidden;
+}
+
+#sendForm .success {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sendForm .success h4 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#sendForm.sendFormSuccess .success {
+  opacity: 1;
+}
